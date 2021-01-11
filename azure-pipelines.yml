@@ -6,7 +6,7 @@ jobs:
     steps:
       - bash: |
           docker login -u $(DOCKER_USERNAME) -p $(DOCKER_PASSWORD)
-          cd dockerfiles
+          cd mxnet-agent/dockerfiles
           make docker_build_cpu
           ./push.sh docker_push_cpu
   - job: GPU
@@ -16,6 +16,6 @@ jobs:
     steps:
       - bash: |
           docker login -u $(DOCKER_USERNAME) -p $(DOCKER_PASSWORD)
-          cd dockerfiles
+          cd mxnet-agent/dockerfiles
           make docker_build_gpu
           ./push.sh docker_push_gpu
