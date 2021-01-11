@@ -423,11 +423,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:d2b11c311cc8f60f5c4318fd6a83918f1ed7ccf085ca7028853b34a71b4a6588"
+  digest = "1:f6abfb128b9ce3fa89b49596767172fcb6f9ec9d206af72da9ff20e000073dd8"
   name = "github.com/c3sr/go-mxnet"
   packages = ["mxnet"]
   pruneopts = "T"
-  revision = "5617eb14e294f4be8e4be632e6c5de4f48c7b477"
+  revision = "a67fa18208b7a4c762b40f84b5496e0d4a7559b2"
 
 [[projects]]
   branch = "master"

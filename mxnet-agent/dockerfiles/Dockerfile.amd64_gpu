@@ -17,6 +17,7 @@ LABEL org.mlmodelscope.mxnet.agent.build-date=$BUILD_DATE \
       org.mlmodelscope.mxnet.agent.version=$VERSION \
       org.mlmodelscope.mxnet.agent.schema-version="1.0"
 
+# Setup Library path
 ENV LD_LIBRARY_PATH /usr/local/cuda-10.1/compat:$LD_LIBRARY_PATH
 
 # Get Go bindings
