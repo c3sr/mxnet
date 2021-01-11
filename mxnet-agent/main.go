@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rai-project/config"
-	cmd "github.com/rai-project/dlframework/framework/cmd/server"
-	"github.com/rai-project/logger"
-	"github.com/rai-project/mxnet"
-	_ "github.com/rai-project/mxnet/predictor"
-	"github.com/rai-project/tracer"
+	"github.com/c3sr/config"
+	cmd "github.com/c3sr/dlframework/framework/cmd/server"
+	"github.com/c3sr/logger"
+	"github.com/c3sr/mxnet"
+	_ "github.com/c3sr/mxnet/predictor"
+	"github.com/c3sr/tracer"
 	"github.com/sirupsen/logrus"
 )
 

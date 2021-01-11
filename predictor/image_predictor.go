@@ -7,12 +7,12 @@ import (
 	opentracing "github.com/opentracing/opentracing-go"
 	olog "github.com/opentracing/opentracing-go/log"
 	"github.com/pkg/errors"
-	"github.com/rai-project/dlframework"
-	"github.com/rai-project/dlframework/framework/options"
-	common "github.com/rai-project/dlframework/framework/predictor"
-	"github.com/rai-project/downloadmanager"
-	gomxnet "github.com/rai-project/go-mxnet/mxnet"
-	"github.com/rai-project/tracer"
+	"github.com/c3sr/dlframework"
+	"github.com/c3sr/dlframework/framework/options"
+	common "github.com/c3sr/dlframework/framework/predictor"
+	"github.com/c3sr/downloadmanager"
+	gomxnet "github.com/c3sr/go-mxnet/mxnet"
+	"github.com/c3sr/tracer"
 	"gorgonia.org/tensor"
 )
 

@@ -19,7 +19,7 @@ LABEL org.mlmodelscope.mxnet.agent.build-date=$BUILD_DATE \
 
 
 # Get Go bindings
-ENV PKG github.com/rai-project/mxnet
+ENV PKG github.com/c3sr/mxnet
 WORKDIR $GOPATH/src/$PKG
 
 RUN git clone --depth=1 https://${PKG}.git . && \

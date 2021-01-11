@@ -8,7 +8,7 @@ import (
 
 	rice "github.com/GeertJohan/go.rice"
 	"github.com/k0kubun/pp"
-	"github.com/rai-project/dlframework"
+	"github.com/c3sr/dlframework"
 	"github.com/stretchr/testify/assert"
 	yaml "gopkg.in/yaml.v2"
 )

@@ -41,16 +41,16 @@ ENV LD_LIBRARY_PATH /usr/local/cuda-10.1/compat/lib.real:$LD_LIBRARY_PATH
 RUN go get -u github.com/golang/dep/cmd/dep
 
 # Get Go bindings
-ENV PKG github.com/rai-project/mxnet
+ENV PKG github.com/c3sr/mxnet
 WORKDIR $GOPATH/src/$PKG
 
 RUN git clone --depth=1 https://${PKG}.git .
 
 RUN dep ensure -v -no-vendor -update \
-    github.com/rai-project/mxnet \
-    github.com/rai-project/go-mxnet \
-    github.com/rai-project/dlframework \
-    github.com/rai-project/evaluation && \
+    github.com/c3sr/mxnet \
+    github.com/c3sr/go-mxnet \
+    github.com/c3sr/dlframework \
+    github.com/c3sr/evaluation && \
     dep ensure -v -vendor-only
 
 RUN go build -a -installsuffix cgo -ldflags "-s -w -X ${PKG}/Version=${VERSION} -X ${PKG}/GitCommit=${VCS_REF} -X ${PKG}/BuildDate=${BUILD_DATE}"&& \

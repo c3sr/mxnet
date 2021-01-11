@@ -4,13 +4,13 @@ import (
 	"os"
 
 	assetfs "github.com/elazarl/go-bindata-assetfs"
-	"github.com/rai-project/dlframework"
-	"github.com/rai-project/dlframework/framework"
+	"github.com/c3sr/dlframework"
+	"github.com/c3sr/dlframework/framework"
 )
 
 var FrameworkManifest = dlframework.FrameworkManifest{
 	Name:    "MXNet",
-	Version: "1.4.0",
+	Version: "1.7.0",
 	Container: map[string]*dlframework.ContainerHardware{
 		"amd64": {
 			Cpu: "raiproject/carml-mxnet:amd64-cpu",

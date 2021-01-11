@@ -12,7 +12,7 @@ push: docker_push output
 release: docker_build docker_push
 
 # Image and binary can be overidden with env vars.
-DOCKER_IMAGE ?= carml/mxnet-agent
+DOCKER_IMAGE ?= c3sr/mxnet-agent
 
 
 # Get System architecture
@@ -31,8 +31,6 @@ GIT_NOT_CLEAN_CHECK = $(shell git status --porcelain)
 ifneq (x$(GIT_NOT_CLEAN_CHECK), x)
 DOCKER_TAG_SUFFIX = "-dirty"
 endif
-
-
 
 # If we're releasing to Docker Hub, and we're going to mark it with the latest tag, it should exactly match a version release
 ifeq ($(MAKECMDGOALS),release)
@@ -79,7 +77,6 @@ docker_build_gpu_ngc: # Build GPU NGC Docker image
 		-t $(DOCKER_IMAGE):$(ARCH)-gpu-ngc-$(DOCKER_TAG) .
 
 docker_build: docker_build_cpu docker_build_gpu docker_build_gpu_ngc
-
 
 docker_push_cpu: # Tag image as latest and Push to DockerHub
 	docker tag $(DOCKER_IMAGE):$(ARCH)-cpu-$(DOCKER_TAG) $(DOCKER_IMAGE):$(ARCH)-cpu-latest

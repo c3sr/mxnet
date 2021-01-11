@@ -6,11 +6,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/rai-project/dlframework/framework/options"
-	raiimage "github.com/rai-project/image"
-	"github.com/rai-project/image/types"
-	mx "github.com/rai-project/mxnet"
-	nvidiasmi "github.com/rai-project/nvidia-smi"
+	"github.com/c3sr/dlframework/framework/options"
+	raiimage "github.com/c3sr/image"
+	"github.com/c3sr/image/types"
+	mx "github.com/c3sr/mxnet"
+	nvidiasmi "github.com/c3sr/nvidia-smi"
 	"github.com/stretchr/testify/assert"
 	gotensor "gorgonia.org/tensor"
 )
