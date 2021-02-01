@@ -4,7 +4,6 @@ import (
 	"context"
 	"strings"
 
-	"github.com/pkg/errors"
 	"github.com/c3sr/config"
 	"github.com/c3sr/dlframework"
 	"github.com/c3sr/dlframework/framework/agent"
@@ -12,6 +11,7 @@ import (
 	common "github.com/c3sr/dlframework/framework/predictor"
 	"github.com/c3sr/mxnet"
 	"github.com/c3sr/tracer"
+	"github.com/pkg/errors"
 	"gorgonia.org/tensor"
 	gotensor "gorgonia.org/tensor"
 )
