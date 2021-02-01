@@ -4,15 +4,15 @@ import (
 	"context"
 	"io/ioutil"
 
-	opentracing "github.com/opentracing/opentracing-go"
-	olog "github.com/opentracing/opentracing-go/log"
-	"github.com/pkg/errors"
 	"github.com/c3sr/dlframework"
 	"github.com/c3sr/dlframework/framework/options"
 	common "github.com/c3sr/dlframework/framework/predictor"
 	"github.com/c3sr/downloadmanager"
 	gomxnet "github.com/c3sr/go-mxnet/mxnet"
 	"github.com/c3sr/tracer"
+	opentracing "github.com/opentracing/opentracing-go"
+	olog "github.com/opentracing/opentracing-go/log"
+	"github.com/pkg/errors"
 	"gorgonia.org/tensor"
 )
 

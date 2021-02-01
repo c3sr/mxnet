@@ -35,6 +35,12 @@ output:
     classes_layer: 0
     probabilities_layer: 1
     boxes_layer: 2
+    scale_width: 400
+    scale_height: 300
+    xmin_index: 0
+    ymin_index: 1
+    xmax_index: 2
+    ymax_index: 3
     features_url: https://s3.amazonaws.com/store.carml.org/synsets/pascal_voc/pascal_voc_lables_no_background.txt
     features_checksum: 5ae5d62183cfb6f6d3ac109359d06a1b
 model: # specifies model graph and weights sources

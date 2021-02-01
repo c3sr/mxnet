@@ -332,8 +332,7 @@
   revision = "8ec223752bfc2f65b7e37373a0ac0530ffb81509"
 
 [[projects]]
-  branch = "master"
-  digest = "1:bd642cd0ef0ce4aced1f47f06f5100207a600f255745c8ca7e92b4f2248d827c"
+  digest = "1:f6da70aa43c543b5b6258135b4c4fc010456cac6e9450dc605f1cd3bc970058f"
   name = "github.com/c3sr/dlframework"
   packages = [
     ".",
@@ -347,7 +346,8 @@
     "steps",
   ]
   pruneopts = "T"
-  revision = "a1126c8d32875ba16ef64adf196c4ba627f29673"
+  revision = "09cb32a3a2c8e82fdaf04c89fc58a1496cb2d86e"
+  version = "v0.3.3"
 
 [[projects]]
   branch = "master"
@@ -422,12 +422,12 @@
   revision = "5f41fcc47fa01bd4eebeb21da28a4a7829a55e48"
 
 [[projects]]
-  branch = "master"
-  digest = "1:f6abfb128b9ce3fa89b49596767172fcb6f9ec9d206af72da9ff20e000073dd8"
+  digest = "1:1bacb9e227012f11b70d61fa59548e6967c978220e62772f2911ca629da385bc"
   name = "github.com/c3sr/go-mxnet"
   packages = ["mxnet"]
   pruneopts = "T"
-  revision = "a67fa18208b7a4c762b40f84b5496e0d4a7559b2"
+  revision = "8917072185c305d860317bdff6eeb864bc1a6299"
+  version = "v0.4.1"
 
 [[projects]]
   branch = "master"
