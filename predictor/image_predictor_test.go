@@ -8,6 +8,7 @@ import (
 
 	"github.com/c3sr/dlframework/framework/options"
 	raiimage "github.com/c3sr/image"
+	"github.com/k0kubun/pp"
 	"github.com/c3sr/image/types"
 	mx "github.com/c3sr/mxnet"
 	nvidiasmi "github.com/c3sr/nvidia-smi"
@@ -35,9 +36,9 @@ func normalizeImageCHW(in types.Image, mean []float32, scale []float32) ([]float
 	return out, nil
 }
 
-func TestNewImageClassificationPredictor(t *testing.T) {
+func TestPredictorNew(t *testing.T) {
 	mx.Register()
-	model, err := mx.FrameworkManifest.FindModel("SqueezeNet_v1:1.0")
+	model, err := mx.FrameworkManifest.FindModel("SqueezeNet_v1.0:1.0")
 	assert.NoError(t, err)
 	assert.NotEmpty(t, model)
 
@@ -125,6 +126,12 @@ func TestImageClassification(t *testing.T) {
 	if err != nil {
 		return
 	}
+
+	pp.Println("Index: ", pred[0][0].GetClassification().GetIndex())
+	pp.Println("Label: ", pred[0][0].GetClassification().GetLabel())
+	pp.Println("Probability: ", pred[0][0].GetProbability())
+
+	// The value for squeezenet v1.0
 	assert.InDelta(t, float32(0.967381), pred[0][0].GetProbability(), 0.001)
 	assert.Equal(t, int32(103), pred[0][0].GetClassification().GetIndex())
 }
