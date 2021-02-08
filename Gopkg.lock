@@ -332,7 +332,7 @@
   revision = "8ec223752bfc2f65b7e37373a0ac0530ffb81509"
 
 [[projects]]
-  digest = "1:f6da70aa43c543b5b6258135b4c4fc010456cac6e9450dc605f1cd3bc970058f"
+  digest = "1:c459357e61ad9bf2fe4ec06ef022335f1bda0e78e161f5afb22dea4b980225c9"
   name = "github.com/c3sr/dlframework"
   packages = [
     ".",
@@ -346,8 +346,8 @@
     "steps",
   ]
   pruneopts = "T"
-  revision = "09cb32a3a2c8e82fdaf04c89fc58a1496cb2d86e"
-  version = "v0.3.3"
+  revision = "146bca165b6d741b01a7a64adfaf4a78dfb68915"
+  version = "v0.3.5"
 
 [[projects]]
   branch = "master"
