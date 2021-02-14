@@ -1,7 +1,7 @@
 package mxnet
 
 var (
-	Version   = "0.3.3"
+	Version   = "0.3.4"
 	BuildDate = "undefined"
 	GitCommit = "undefined"
 )
